@@ -11,8 +11,6 @@ import { Configuration, OpenAIApi } from "openai";
 import userRoutes from "./routes/users.js";
 import questionRoutes from "./routes/Questions.js";
 import answerRoutes from "./routes/Answers.js";
-//import openaiRoutes from "./routes/openai.js";
-// import subsRoutes from "./routes/subs.js";
 
 
 dotenv.config();
@@ -21,11 +19,9 @@ const app = express();
 
 
 dotenv.config();
-//const app = express();
 app.use(cors());
 
 
-//const router = express.Router()
 
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_API_KEY,
@@ -83,32 +79,6 @@ app.get('/',(req, res) => {
 app.use("/user", userRoutes);
 app.use("/questions", questionRoutes);
 app.use("/answer", answerRoutes);
-//app.use("/openai", openaiRoutes);
-// app.use("/subs", subsRoutes);
-
-// app.use(function (req, res, next) {
-//   // Website you wish to allow to connect
-//   res.setHeader("Access-Control-Allow-Origin", "*");
-
-//   // Request methods you wish to allow
-//   res.setHeader(
-//     "Access-Control-Allow-Methods",
-//     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-//   );
-
-//   // Request headers you wish to allow
-//   res.setHeader(
-//     "Access-Control-Allow-Headers",
-//     "X-Requested-With,content-type"
-//   );
-
-//   // Set to true if you need the website to include cookies in the requests sent
-//   // to the API (e.g. in case you use sessions)
-//   res.setHeader("Access-Control-Allow-Credentials", true);
-
-//   // Pass to next layer of middleware
-//   next();
-// });
 
 
 
