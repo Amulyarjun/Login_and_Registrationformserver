@@ -21,11 +21,17 @@ const app = express();
 
 
 dotenv.config();
+<<<<<<< HEAD
 //const app = express();
 app.use(cors());
 
 
 //const router = express.Router()
+=======
+app.use(cors());
+
+
+>>>>>>> 8e52cb5ff14deaf60e75a99eb9fedd43de6dd4c0
 
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_API_KEY,
@@ -109,6 +115,8 @@ app.use("/answer", answerRoutes);
 //   // Pass to next layer of middleware
 //   next();
 // });
+
+
 
 
 
