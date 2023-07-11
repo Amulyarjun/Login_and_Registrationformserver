@@ -21,23 +21,11 @@ const app = express();
 
 
 dotenv.config();
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e09d4f2f70a044d86504215dc5dd3da8a869bfd4
 //const app = express();
 app.use(cors());
 
 
 //const router = express.Router()
-<<<<<<< HEAD
-=======
-=======
-app.use(cors());
-
-
->>>>>>> 8e52cb5ff14deaf60e75a99eb9fedd43de6dd4c0
->>>>>>> e09d4f2f70a044d86504215dc5dd3da8a869bfd4
 
 const configuration = new Configuration({
   apiKey: process.env.REACT_APP_API_KEY,
@@ -123,11 +111,6 @@ app.use("/answer", answerRoutes);
 // });
 
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> e09d4f2f70a044d86504215dc5dd3da8a869bfd4
 
 const PORT = process.env.PORT || 5000;
 
